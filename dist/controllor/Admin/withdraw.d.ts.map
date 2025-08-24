@@ -1,0 +1,1 @@
+{"version":3,"file":"withdraw.d.ts","sourceRoot":"","sources":["../../../src/controllor/Admin/withdraw.ts"],"names":[],"mappings":"AAGA,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAQ5C,UAAU,oBAAqB,SAAQ,OAAO;IAC1C,IAAI,CAAC,EAAE;QAAE,GAAG,EAAE,MAAM,CAAA;KAAE,CAAC;CAC1B;AAED,eAAO,MAAM,QAAQ,QAAe,oBAAoB,OAAO,QAAQ,KAAG,OAAO,CAAC,GAAG,CAiFpF,CAAA"}

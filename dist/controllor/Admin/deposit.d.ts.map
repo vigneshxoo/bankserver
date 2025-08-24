@@ -1,0 +1,1 @@
+{"version":3,"file":"deposit.d.ts","sourceRoot":"","sources":["../../../src/controllor/Admin/deposit.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAO5C,UAAU,oBAAqB,SAAQ,OAAO;IAC1C,IAAI,CAAC,EAAE;QAAE,GAAG,EAAE,MAAM,CAAA;KAAE,CAAC;CAC1B;AAED,eAAO,MAAM,OAAO,QAAe,oBAAoB,OAAO,QAAQ,KAAG,OAAO,CAAC,GAAG,CAmFnF,CAAC"}

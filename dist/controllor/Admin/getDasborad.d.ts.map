@@ -1,0 +1,1 @@
+{"version":3,"file":"getDasborad.d.ts","sourceRoot":"","sources":["../../../src/controllor/Admin/getDasborad.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAK5C,UAAU,oBAAqB,SAAQ,OAAO;IAC1C,IAAI,CAAC,EAAE;QACH,GAAG,EAAE,MAAM,CAAC;KACf,CAAC;CACL;AACD,eAAO,MAAM,OAAO,QAAe,oBAAoB,OAAO,QAAQ,KAAG,OAAO,CAAC,GAAG,CAenF,CAAA"}

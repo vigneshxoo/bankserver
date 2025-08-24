@@ -1,0 +1,1 @@
+{"version":3,"file":"applyloan.d.ts","sourceRoot":"","sources":["../../../src/controllor/Admin/applyloan.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAC5C,OAAO,EAAE,YAAY,EAAE,MAAM,qBAAqB,CAAC;AAEnD,UAAU,oBAAqB,SAAQ,OAAO;IAC1C,IAAI,CAAC,EAAE,YAAY,CAAC;CACvB;AAED,eAAO,MAAM,SAAS,QAAe,oBAAoB,OAAO,QAAQ,KAAG,OAAO,CAAC,GAAG,CAgDrF,CAAC"}

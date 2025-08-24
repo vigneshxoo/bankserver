@@ -1,0 +1,1 @@
+{"version":3,"file":"createAcount.d.ts","sourceRoot":"","sources":["../../../src/controllor/Admin/createAcount.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAE5C,OAAO,EAAE,YAAY,EAAE,MAAM,qBAAqB,CAAC;AAMnD,UAAU,oBAAqB,SAAQ,OAAO;IAC1C,IAAI,CAAC,EAAE,YAAY,CAAC;CACvB;AAED,eAAO,MAAM,cAAc,QAAe,oBAAoB,OAAO,QAAQ,KAAG,OAAO,CAAC,GAAG,CAqF1F,CAAA"}
