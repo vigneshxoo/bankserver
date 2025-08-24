@@ -21,12 +21,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(express.json());
-app.use(cors({
-    origin: process.env.FR_URL,
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"]
-}));
+// app.use(cors({
+//     origin: process.env.FR_URL,
+//     credentials: true,
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//     allowedHeaders: ["Content-Type", "Authorization"]
+// }))
+app.use(cors());
 app.use(Router_1.router);
 app.get('/', (req, res) => {
     return res.send("hello vicky");
