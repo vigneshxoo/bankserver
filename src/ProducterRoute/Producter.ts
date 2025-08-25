@@ -7,14 +7,15 @@ import User from "../Db/UserShcema";
 import { UserDocument } from "../Db/UserShcema";
 import connectDB from "../Db/connectDb";
 import Account, { ICreateAccount } from "../Db/createAccount";
-
 interface AuthenticatedRequest extends Request {
     user?: ICreateAccount;
 }
 
 export const ProductRouter = async (req: AuthenticatedRequest, res: Response, next: NextFunction) => {
-    // const secretKey = process.env.JWT_SECRET
-    const secretKey=process.env.JWT_SECRET || ""
+
+    const secretKey = process.env.JWT_SECRET || ""
+    console.log(secretKey)
+    if (!secretKey) return res.status(400).json({ message: "secret key missing" })
     try {
         // console.log(req.cookies)
         const token = req.cookies.jwt;
@@ -37,7 +38,7 @@ export const ProductRouter = async (req: AuthenticatedRequest, res: Response, ne
         if (!decoded || !decoded.userid) {
             return res.status(401).json({ message: "Token unauthorized" });
         }
-       await connectDB()
+        await connectDB()
         const userp = await Account.findOne({ _id: decoded.userid }).select('-password')
         if (!userp) {
             return res.status(404).json({ message: "User not found" });

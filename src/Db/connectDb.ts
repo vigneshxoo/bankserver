@@ -1,9 +1,12 @@
 import mongoose from "mongoose";
 
 const connectDB = async () => {
-  var MONGO_URI = "mongodb://localhost:27017/Banking";
+  let mongouri=process.env.MONGO_URI
+  if(!mongouri)return console.log("mongouri missing")
+    
+
   try {
-    await mongoose.connect(process.env.MONGO_URI as string);
+    await mongoose.connect(mongouri as string);
     console.log("MongoDB connected");
   } catch (error) {
     console.error("MongoDB connection error:", error);

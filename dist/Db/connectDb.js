@@ -2,9 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = require("mongoose");
 const connectDB = async () => {
-    var MONGO_URI = "mongodb://localhost:27017/Banking";
+    let mongouri = process.env.MONGO_URI;
+    if (!mongouri)
+        return console.log("mongouri missing");
     try {
-        await mongoose_1.default.connect(process.env.MONGO_URI);
+        await mongoose_1.default.connect(mongouri);
         console.log("MongoDB connected");
     }
     catch (error) {

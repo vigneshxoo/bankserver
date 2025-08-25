@@ -5,8 +5,10 @@ const jwt = require("jsonwebtoken");
 const connectDb_1 = require("../Db/connectDb");
 const createAccount_1 = require("../Db/createAccount");
 const ProductRouter = async (req, res, next) => {
-    // const secretKey = process.env.JWT_SECRET
     const secretKey = process.env.JWT_SECRET || "";
+    console.log(secretKey);
+    if (!secretKey)
+        return res.status(400).json({ message: "secret key missing" });
     try {
         // console.log(req.cookies)
         const token = req.cookies.jwt;
